@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		616D5D161940DB9C001863FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616D5D151940DB9C001863FD /* Foundation.framework */; };
+		616D5D181940DB9C001863FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616D5D171940DB9C001863FD /* CoreGraphics.framework */; };
+		616D5D1A1940DB9C001863FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616D5D191940DB9C001863FD /* UIKit.framework */; };
+		616D5D201940DB9C001863FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 616D5D1E1940DB9C001863FD /* InfoPlist.strings */; };
+		616D5D221940DB9C001863FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 616D5D211940DB9C001863FD /* main.m */; };
+		616D5D261940DB9C001863FD /* HTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 616D5D251940DB9C001863FD /* HTAppDelegate.m */; };
+		616D5D291940DB9C001863FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616D5D271940DB9C001863FD /* Main.storyboard */; };
+		616D5D2C1940DB9C001863FD /* HTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616D5D2B1940DB9C001863FD /* HTViewController.m */; };
+		616D5D2E1940DB9C001863FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616D5D2D1940DB9C001863FD /* Images.xcassets */; };
+		616D5D351940DB9D001863FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616D5D341940DB9C001863FD /* XCTest.framework */; };
+		616D5D361940DB9D001863FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616D5D151940DB9C001863FD /* Foundation.framework */; };
+		616D5D371940DB9D001863FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616D5D191940DB9C001863FD /* UIKit.framework */; };
+		616D5D3F1940DB9D001863FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 616D5D3D1940DB9D001863FD /* InfoPlist.strings */; };
+		616D5D411940DB9D001863FD /* SOHPTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 616D5D401940DB9D001863FD /* SOHPTimerTests.m */; };
+		616D5D4E1940E484001863FD /* so_hptimer.c in Sources */ = {isa = PBXBuildFile; fileRef = 616D5D4D1940E484001863FD /* so_hptimer.c */; };
+		616D5D4F1940E484001863FD /* so_hptimer.c in Sources */ = {isa = PBXBuildFile; fileRef = 616D5D4D1940E484001863FD /* so_hptimer.c */; };
+		616D5D521940FBA1001863FD /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 616D5D511940FBA1001863FD /* Readme.md */; };
+		616D5D531940FBA1001863FD /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 616D5D511940FBA1001863FD /* Readme.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		616D5D381940DB9D001863FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 616D5D0A1940DB9C001863FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616D5D111940DB9C001863FD;
+			remoteInfo = SOHPTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		616D5D121940DB9C001863FD /* SOHPTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOHPTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		616D5D151940DB9C001863FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		616D5D171940DB9C001863FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		616D5D191940DB9C001863FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		616D5D1D1940DB9C001863FD /* SOHPTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOHPTimer-Info.plist"; sourceTree = "<group>"; };
+		616D5D1F1940DB9C001863FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		616D5D211940DB9C001863FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		616D5D231940DB9C001863FD /* SOHPTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOHPTimer-Prefix.pch"; sourceTree = "<group>"; };
+		616D5D241940DB9C001863FD /* HTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTAppDelegate.h; sourceTree = "<group>"; };
+		616D5D251940DB9C001863FD /* HTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTAppDelegate.m; sourceTree = "<group>"; };
+		616D5D281940DB9C001863FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		616D5D2A1940DB9C001863FD /* HTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTViewController.h; sourceTree = "<group>"; };
+		616D5D2B1940DB9C001863FD /* HTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTViewController.m; sourceTree = "<group>"; };
+		616D5D2D1940DB9C001863FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		616D5D331940DB9C001863FD /* SOHPTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOHPTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		616D5D341940DB9C001863FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		616D5D3C1940DB9D001863FD /* SOHPTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOHPTimerTests-Info.plist"; sourceTree = "<group>"; };
+		616D5D3E1940DB9D001863FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		616D5D401940DB9D001863FD /* SOHPTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOHPTimerTests.m; sourceTree = "<group>"; };
+		616D5D4D1940E484001863FD /* so_hptimer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = so_hptimer.c; path = timer/so_hptimer.c; sourceTree = "<group>"; };
+		616D5D501940E49A001863FD /* so_hptimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = so_hptimer.h; path = timer/so_hptimer.h; sourceTree = "<group>"; };
+		616D5D511940FBA1001863FD /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		616D5D0F1940DB9C001863FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D5D181940DB9C001863FD /* CoreGraphics.framework in Frameworks */,
+				616D5D1A1940DB9C001863FD /* UIKit.framework in Frameworks */,
+				616D5D161940DB9C001863FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616D5D301940DB9C001863FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D5D351940DB9D001863FD /* XCTest.framework in Frameworks */,
+				616D5D371940DB9D001863FD /* UIKit.framework in Frameworks */,
+				616D5D361940DB9D001863FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		616D5D091940DB9C001863FD = {
+			isa = PBXGroup;
+			children = (
+				616D5D511940FBA1001863FD /* Readme.md */,
+				616D5D1B1940DB9C001863FD /* SOHPTimer */,
+				616D5D3A1940DB9D001863FD /* SOHPTimerTests */,
+				616D5D141940DB9C001863FD /* Frameworks */,
+				616D5D131940DB9C001863FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		616D5D131940DB9C001863FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				616D5D121940DB9C001863FD /* SOHPTimer.app */,
+				616D5D331940DB9C001863FD /* SOHPTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		616D5D141940DB9C001863FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				616D5D151940DB9C001863FD /* Foundation.framework */,
+				616D5D171940DB9C001863FD /* CoreGraphics.framework */,
+				616D5D191940DB9C001863FD /* UIKit.framework */,
+				616D5D341940DB9C001863FD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		616D5D1B1940DB9C001863FD /* SOHPTimer */ = {
+			isa = PBXGroup;
+			children = (
+				616D5D241940DB9C001863FD /* HTAppDelegate.h */,
+				616D5D251940DB9C001863FD /* HTAppDelegate.m */,
+				616D5D271940DB9C001863FD /* Main.storyboard */,
+				616D5D2A1940DB9C001863FD /* HTViewController.h */,
+				616D5D2B1940DB9C001863FD /* HTViewController.m */,
+				616D5D2D1940DB9C001863FD /* Images.xcassets */,
+				616D5D1C1940DB9C001863FD /* Supporting Files */,
+				616D5D4D1940E484001863FD /* so_hptimer.c */,
+				616D5D501940E49A001863FD /* so_hptimer.h */,
+			);
+			path = SOHPTimer;
+			sourceTree = "<group>";
+		};
+		616D5D1C1940DB9C001863FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				616D5D1D1940DB9C001863FD /* SOHPTimer-Info.plist */,
+				616D5D1E1940DB9C001863FD /* InfoPlist.strings */,
+				616D5D211940DB9C001863FD /* main.m */,
+				616D5D231940DB9C001863FD /* SOHPTimer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		616D5D3A1940DB9D001863FD /* SOHPTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				616D5D401940DB9D001863FD /* SOHPTimerTests.m */,
+				616D5D3B1940DB9D001863FD /* Supporting Files */,
+			);
+			path = SOHPTimerTests;
+			sourceTree = "<group>";
+		};
+		616D5D3B1940DB9D001863FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				616D5D3C1940DB9D001863FD /* SOHPTimerTests-Info.plist */,
+				616D5D3D1940DB9D001863FD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		616D5D111940DB9C001863FD /* SOHPTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616D5D441940DB9D001863FD /* Build configuration list for PBXNativeTarget "SOHPTimer" */;
+			buildPhases = (
+				616D5D0E1940DB9C001863FD /* Sources */,
+				616D5D0F1940DB9C001863FD /* Frameworks */,
+				616D5D101940DB9C001863FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOHPTimer;
+			productName = SOHPTimer;
+			productReference = 616D5D121940DB9C001863FD /* SOHPTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		616D5D321940DB9C001863FD /* SOHPTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616D5D471940DB9D001863FD /* Build configuration list for PBXNativeTarget "SOHPTimerTests" */;
+			buildPhases = (
+				616D5D2F1940DB9C001863FD /* Sources */,
+				616D5D301940DB9C001863FD /* Frameworks */,
+				616D5D311940DB9C001863FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				616D5D391940DB9D001863FD /* PBXTargetDependency */,
+			);
+			name = SOHPTimerTests;
+			productName = SOHPTimerTests;
+			productReference = 616D5D331940DB9C001863FD /* SOHPTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		616D5D0A1940DB9C001863FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sononum.net;
+				TargetAttributes = {
+					616D5D321940DB9C001863FD = {
+						TestTargetID = 616D5D111940DB9C001863FD;
+					};
+				};
+			};
+			buildConfigurationList = 616D5D0D1940DB9C001863FD /* Build configuration list for PBXProject "SOHPTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 616D5D091940DB9C001863FD;
+			productRefGroup = 616D5D131940DB9C001863FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				616D5D111940DB9C001863FD /* SOHPTimer */,
+				616D5D321940DB9C001863FD /* SOHPTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		616D5D101940DB9C001863FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D5D2E1940DB9C001863FD /* Images.xcassets in Resources */,
+				616D5D201940DB9C001863FD /* InfoPlist.strings in Resources */,
+				616D5D521940FBA1001863FD /* Readme.md in Resources */,
+				616D5D291940DB9C001863FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616D5D311940DB9C001863FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D5D531940FBA1001863FD /* Readme.md in Resources */,
+				616D5D3F1940DB9D001863FD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		616D5D0E1940DB9C001863FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D5D2C1940DB9C001863FD /* HTViewController.m in Sources */,
+				616D5D261940DB9C001863FD /* HTAppDelegate.m in Sources */,
+				616D5D221940DB9C001863FD /* main.m in Sources */,
+				616D5D4E1940E484001863FD /* so_hptimer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616D5D2F1940DB9C001863FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D5D411940DB9D001863FD /* SOHPTimerTests.m in Sources */,
+				616D5D4F1940E484001863FD /* so_hptimer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		616D5D391940DB9D001863FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 616D5D111940DB9C001863FD /* SOHPTimer */;
+			targetProxy = 616D5D381940DB9D001863FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		616D5D1E1940DB9C001863FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616D5D1F1940DB9C001863FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		616D5D271940DB9C001863FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616D5D281940DB9C001863FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		616D5D3D1940DB9D001863FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616D5D3E1940DB9D001863FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		616D5D421940DB9D001863FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		616D5D431940DB9D001863FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		616D5D451940DB9D001863FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOHPTimer/SOHPTimer-Prefix.pch";
+				INFOPLIST_FILE = "SOHPTimer/SOHPTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		616D5D461940DB9D001863FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOHPTimer/SOHPTimer-Prefix.pch";
+				INFOPLIST_FILE = "SOHPTimer/SOHPTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		616D5D481940DB9D001863FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SOHPTimer.app/SOHPTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOHPTimer/SOHPTimer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SOHPTimerTests/SOHPTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		616D5D491940DB9D001863FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SOHPTimer.app/SOHPTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOHPTimer/SOHPTimer-Prefix.pch";
+				INFOPLIST_FILE = "SOHPTimerTests/SOHPTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		616D5D0D1940DB9C001863FD /* Build configuration list for PBXProject "SOHPTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616D5D421940DB9D001863FD /* Debug */,
+				616D5D431940DB9D001863FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		616D5D441940DB9D001863FD /* Build configuration list for PBXNativeTarget "SOHPTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616D5D451940DB9D001863FD /* Debug */,
+				616D5D461940DB9D001863FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		616D5D471940DB9D001863FD /* Build configuration list for PBXNativeTarget "SOHPTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616D5D481940DB9D001863FD /* Debug */,
+				616D5D491940DB9D001863FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 616D5D0A1940DB9C001863FD /* Project object */;
+}
