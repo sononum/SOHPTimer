@@ -15,28 +15,35 @@
 
 @implementation SOHPTimerTests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
 - (void)testTimer
 {
     so_hptimer timer;
-    XCTAssertEqual(noErr, so_hptimer_create(&timer, 1000 * NSEC_PER_MSEC), @"must create timer");
-    so_hptimer_set_action(timer, ^(void * refcon) {
+    XCTAssertEqual(noErr, so_hptimer_create(&timer, 100 * NSEC_PER_MSEC), @"must create timer");
+    so_hptimer_set_action(timer, ^() {
         NSLog(@"hi!");
     });
     XCTAssertEqual(noErr, so_hptimer_resume(timer), @"must resume timer");
-    sleep(10);
-    XCTAssertEqual(noErr, so_hptimer_cancel(timer), @"must cancel timer");
+    sleep(1);
+    XCTAssertEqual(noErr, so_hptimer_suspend(timer), @"must suspend timer");
+    XCTAssertEqual(noErr, so_hptimer_resume(timer), @"must resume timer");
+    sleep(1);
+    XCTAssertEqual(noErr, so_hptimer_suspend(timer), @"must cancel timer");
+    XCTAssertEqual(noErr, so_hptimer_dispose(timer), @"must dispose timer");
+}
+
+- (void)testTimerRepetitions1 {
+    const uint64_t num_expected = 42;
+    __block uint64_t count = 0;
+
+    so_hptimer timer;
+    XCTAssertEqual(noErr, so_hptimer_create(&timer, 100 * NSEC_PER_MSEC), @"must create timer");
+    so_hptimer_set_action(timer, ^{
+        ++count;
+    });
+    XCTAssertEqual(noErr, so_hptimer_set_maxrepetitions(timer, num_expected), @"must set num reps");
+    XCTAssertEqual(noErr, so_hptimer_resume(timer), @"must resume timer");
+    XCTAssertEqual(noErr, so_hptimer_waituntilfinished(timer), @"must wait until finished");
+    XCTAssertEqual(num_expected, count, @"must have invoked block");
     XCTAssertEqual(noErr, so_hptimer_dispose(timer), @"must dispose timer");
 }
 

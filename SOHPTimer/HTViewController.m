@@ -10,8 +10,8 @@
 #import <mach/mach_time.h>
 #import "so_hptimer.h"
 
-static uint64_t interval_ms = 40;
-static unsigned num_measurements = 500;
+static uint64_t interval_ms = 1;
+static unsigned num_measurements = 100;
 
 @interface HTViewController () {
     dispatch_source_t           mTimer;
@@ -62,21 +62,17 @@ static unsigned num_measurements = 500;
     _lastTime = _numMeasurements = 0;
 
     so_hptimer_create(&mHPTimer, interval_ms * NSEC_PER_MSEC);
-    s = dispatch_semaphore_create(0);
+    so_hptimer_set_maxrepetitions(mHPTimer, num_measurements);
     so_hptimer_set_action(mHPTimer, ^(void *refcon) {
         const uint64_t t = mach_absolute_time() *_timebase_info.numer / _timebase_info.denom;
         if (_lastTime) {
             const uint64_t delta_ns = t - _lastTime;
             _deltas[_numMeasurements] = delta_ns;
-            if (_numMeasurements++ == num_measurements) {
-                dispatch_semaphore_signal(s);
-            }
         }
         _lastTime = t;
     });
     so_hptimer_resume(mHPTimer);
-    dispatch_semaphore_wait(s, DISPATCH_TIME_FOREVER);
-    so_hptimer_cancel(mHPTimer);
+    so_hptimer_waituntilfinished(mHPTimer);
     [self calculateStatistics];
 }
 
