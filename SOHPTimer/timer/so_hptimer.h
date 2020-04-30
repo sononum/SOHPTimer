@@ -13,7 +13,7 @@
 
 typedef struct so_hptimer_s* so_hptimer;
 
-typedef void (^so_hptimer_action)();
+typedef void (^so_hptimer_action)(void);
 
 /**
  Creates a new instance of the timer, the time interval is in nano-seconds
